@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+
+# Database (DO NOT commit — contains real data)
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# Uploads (serve from CDN in production)
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Env
+.env
+.env.local
+.env.production
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
