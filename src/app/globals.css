@@ -157,6 +157,48 @@ body {
   border-right: 1px solid #1f2937;
 }
 
+/* Hover classes — used by server components instead of onMouseEnter/Leave */
+.feature-card {
+  padding: 1.75rem 1.5rem;
+  background: var(--dark);
+  border: 1px solid rgba(212,160,23,0.12);
+  transition: border-color 0.3s, transform 0.3s;
+  cursor: default;
+}
+.feature-card:hover {
+  border-color: rgba(212,160,23,0.4);
+  transform: translateY(-2px);
+}
+
+.feature-card-lg {
+  padding: 2rem;
+  background: var(--dark-2);
+  border: 1px solid rgba(212,160,23,0.12);
+  transition: border-color 0.3s;
+}
+.feature-card-lg:hover {
+  border-color: rgba(212,160,23,0.4);
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-link:hover {
+  color: var(--gold);
+}
+
+.room-card-img {
+  transition: transform 0.6s ease;
+}
+.room-card:hover .room-card-img {
+  transform: scale(1.05);
+}
+
 /* Gallery masonry */
 .gallery-grid {
   columns: 3;
